@@ -26,17 +26,19 @@
 Instalamos en VS Code la extensión Rainbow CSV.
 
 **Ruta en Odoo**: Navega a la aplicación de **Ventas \> Pedidos \> Clientes**.
+<img width="395" height="155" alt="Captura de pantalla 2026-05-07 090103" src="https://github.com/user-attachments/assets/424438c1-1e84-44c5-9af5-fe21e5d7d5f2" />
 
-![][image1]
 
 Clicamos en el engranaje e importamos registros, subimos el archivo CSV y antes de importarlo deberemos realizar un Test para validar que el tipo de dato coincide con la base de datos. Si todo está correcto clicamos “Importar”
 
-![][image2]
+<img width="820" height="600" alt="Captura de pantalla 2026-05-07 090147" src="https://github.com/user-attachments/assets/fecd68f4-4466-4830-83f2-1f85c66c5f6c" />
+
 
 3. **El ciclo de negocio**.  
    Entraremos con el usuario “Comercial01” para crear un presupuesto para un nuevo cliente.  
 * Producto de tipo almacenable (Ejemplo de nombre: “Monitor 24””)  
-  Creamos el presupuesto y hacemos clic en confirmar para que pase de ‘Presupuesto’ a ‘Pedido en venta’. Arriba aparecerá un icono de un camión que nos indica que hay “1 Entrega”.![][image3]  
+  Creamos el presupuesto y hacemos clic en confirmar para que pase de ‘Presupuesto’ a ‘Pedido en venta’. Arriba aparecerá un icono de un camión que nos indica que hay “1 Entrega”.<img width="942" height="806" alt="Captura de pantalla 2026-05-05 102253" src="https://github.com/user-attachments/assets/c6a74e6f-bb5a-4793-a5c4-3fdc1b901600" />
+ 
   Si realizamos clic en el camión veremos que el producto estará en estado “Reservado”. Ahora validaremos la entrega. Si volvemos al pedido original podremos utilizar el botón “Crear Factura” ya que hemos validado la entrega. A partir de ello crearemos una factura y se confirmará.
 # Fase 2: Elaboración de Informes
 
@@ -60,9 +62,11 @@ Clicamos en el engranaje e importamos registros, subimos el archivo CSV y antes 
         \</div\>  
    4. Guardamos los cambios en la vista  
    5. Validamos el renderizado: volveremos a Ventas y abriremos el pedido que creamos. Clicamos en la tuerca y descargaremos el Presupuesto.  
-      ![][image4]
+      <img width="922" height="869" alt="image" src="https://github.com/user-attachments/assets/d35416de-9217-4a3d-bacd-9c60096007ec" />
 
-![][image5]
+
+<img width="625" height="400" alt="Captura de pantalla 2026-05-05 102328" src="https://github.com/user-attachments/assets/ddf0e6ac-1158-4f19-89c2-3b0b852e1bda" />
+
 # Fase 3: Exportación de Información
 
 1. Nos dirigimos a los clientes mediante la siguiente ruta: *Facturación \> Clientes \> Clientes*.  
@@ -73,3 +77,4 @@ Clicamos en el engranaje e importamos registros, subimos el archivo CSV y antes 
    3. Y seleccionamos Nombre, Correo electrónico, teléfono y Nombre del país   
 4. Clicamos en “Exportar” y se descargara el archivo  
 5. Abrimos el archivo .csv en VS Code
+<img width="640" height="261" alt="Captura de pantalla 2026-05-05 102353" src="https://github.com/user-attachments/assets/c1fc84df-d28c-4a72-b526-40e3f893ed10" />
