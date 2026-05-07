@@ -63,3 +63,13 @@ Clicamos en el engranaje e importamos registros, subimos el archivo CSV y antes 
       ![][image4]
 
 ![][image5]
+# Fase 3: Exportación de Información
+
+1. Nos dirigimos a los clientes mediante la siguiente ruta: *Facturación \> Clientes \> Clientes*.  
+2. Seleccionamos todos los clientes  
+3. Una vez seleccionados seleccionamos la opción “Exportar”  
+   1. Seleccionamos "Exportar datos compatibles con importación".  
+   2. Formato CSV  
+   3. Y seleccionamos Nombre, Correo electrónico, teléfono y Nombre del país   
+4. Clicamos en “Exportar” y se descargara el archivo  
+5. Abrimos el archivo .csv en VS Code
