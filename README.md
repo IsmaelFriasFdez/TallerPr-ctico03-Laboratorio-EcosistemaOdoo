@@ -38,3 +38,28 @@ Clicamos en el engranaje e importamos registros, subimos el archivo CSV y antes 
 * Producto de tipo almacenable (Ejemplo de nombre: “Monitor 24””)  
   Creamos el presupuesto y hacemos clic en confirmar para que pase de ‘Presupuesto’ a ‘Pedido en venta’. Arriba aparecerá un icono de un camión que nos indica que hay “1 Entrega”.![][image3]  
   Si realizamos clic en el camión veremos que el producto estará en estado “Reservado”. Ahora validaremos la entrega. Si volvemos al pedido original podremos utilizar el botón “Crear Factura” ya que hemos validado la entrega. A partir de ello crearemos una factura y se confirmará.
+# Fase 2: Elaboración de Informes
+
+1. **El Peligro de Modificar el *Core* y la Solución**.  
+   1. Nunca de debe modificar el código fuente original (*core*), para ello se puede realizar de la siguiente manera  
+   2. Activaremos el modo desarrollador y siguiendo la siguiente ruta: *Ajustes \> Técnico \> Interfaz de Usuario \> Vistas* (*Views*).  
+2. Buscaremos utilizando un filtro por **Clave(Key)** y buscaremos *sale.report\_saleorder\_document*.  
+3. **Modificación del XML mediante Herencia (Práctica directa)**:  
+   1. Abriremos el registro.  
+   2. Locazaremos la seccion final buscando el cierre del \<div class=”page”\>.  
+   3. En la línea de arriba del cierre \</div\> copia y pega el siguiente bloque de marcado HTML/XML.  
+       \<div class\="row mt32 mb32" id\="legal\_warning"\>  
+          \<div class\="col-12"\>  
+              \<p style\="color: red; font-weight: bold; border-top: 1px solid black; padding-top: 10px;"\>  
+                  Atención: Este documento vinculante está sujeto a las condiciones generales de venta de DAM/DAW S.L. (CIF: B-12345678).  
+              \</p\>  
+              \<p class\="text-muted" style\="font-size: 10px; text-align: justify;"\>  
+                  Protección de datos: En cumplimiento de la Ley Orgánica 3/2018 y el RGPD europeo, le informamos que sus datos serán tratados de forma estrictamente confidencial. Puede ejercer sus derechos ARCO dirigiéndose a nuestro DPO.  
+              \</p\>  
+          \</div\>  
+        \</div\>  
+   4. Guardamos los cambios en la vista  
+   5. Validamos el renderizado: volveremos a Ventas y abriremos el pedido que creamos. Clicamos en la tuerca y descargaremos el Presupuesto.  
+      ![][image4]
+
+![][image5]
